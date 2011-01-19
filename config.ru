@@ -3,6 +3,6 @@ require 'bundler'
 
 Bundler.require
 
-require 'vntxip'
+require './vntxip.rb'
 run Sinatra::Application
 
