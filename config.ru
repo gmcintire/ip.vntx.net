@@ -1,3 +1,3 @@
-require 'ip'
+require 'vntxip'
 run Sinatra::Application
 
