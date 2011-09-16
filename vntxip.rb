@@ -2,8 +2,9 @@ require 'rubygems'
 require 'sinatra'
 
 get '/' do
-  request.env['HTTP_X_REAL_IP'].split(",").first
+  response = request.env['HTTP_X_REAL_IP'].split(",").first + "\n"
 #  request.env.to_yaml
+  response
 end
 
 get '/ip.json' do
